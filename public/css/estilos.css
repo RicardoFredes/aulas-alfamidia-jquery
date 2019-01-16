@@ -1,0 +1,111 @@
+.ColorRed {
+  color: #ED4343;
+}
+.ColorBlue {
+  color: blue;
+}
+
+.Lamp {
+  width: 150px;
+  height: 320px;
+}
+.Lamp.On {
+  background-color: yellow;
+}
+.Lamp.Off {
+  background-color: #222;
+}
+
+.Menu {
+  display: flex;
+  background-color: #ED4343;
+  color: white;
+  padding: 0;
+}
+.Menu.Closed {
+  display: none;
+}
+.Menu li {
+  list-style: none;
+}
+.Menu li > a {
+  font-family: sans-serif;
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 8px 12px;
+}
+.Menu li > a:hover {
+  background-color: #222;
+}
+.Menu li > a {
+  position: relative;
+}
+.Menu {
+  height: 35px;
+}
+.Submenu {
+  width: 200px;
+  position: absolute;
+  background-color: #555;
+  padding: 0;
+}
+.Submenu li > a {
+  display: block;
+}
+.Submenu li > a:hover {
+  background-color: #333;
+}
+
+.modal
+{
+  display: none;
+  position: fixed;
+  max-width: 100%;
+  width: 600px;
+  padding: 24px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  z-index: 10;
+}
+.modal img
+{
+  max-width: 100%;
+}
+.lightBox
+{
+  display: none;
+  height: 100vh;
+  width: 100%;
+  position: fixed; 
+  background-color: rgba(0,0,0,.5);
+  top: 0; 
+  left: 0; 
+  z-index: 9;
+}
+.show .modal,
+.show .lightBox 
+{
+  display: block;
+}
+
+ul.imagesList
+{
+  padding: 0;
+}
+ul.imagesList li
+{
+  list-style-type: none;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+ul.imagesList li img 
+{
+  height: 80px;
+  width: auto;
+}
