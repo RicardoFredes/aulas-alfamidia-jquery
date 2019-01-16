@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Carrousel</title>
-  <script type="text/javascript" src="../public/js/jquery-3.3.1.min.js"></script>
+  <title>Carousel</title>
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <style type="text/css">
     body {
       text-align: center;
@@ -13,7 +13,7 @@
     #img-principal img {
       width: 505px;
     }
-    #carrousel img {
+    #carousel img {
       width: 90px;
       cursor: pointer;
     }
@@ -24,10 +24,19 @@
   </style>
 </head>
 <body>
-  <h1>Carrousel 2</h1>
+  <h1>Carousel 2</h1>
   <div id="img-principal">
+    <img src="img/foto-cidade-03.jpg">
   </div>
-  <div id="carrousel">
+  <div id="carousel">
+    <img src="img/foto-cidade-01.jpg">
+    <img id="imagem2" src="img/foto-cidade-02.jpg">
+    <img src="img/foto-cidade-03.jpg">
+    <img src="img/foto-cidade-04.jpg">
+    <img id="imagem5" src="img/foto-cidade-05.jpg">
   </div>
+
+  <!-- Importar o script após o html -->
+  <script type="text/javascript" src="MEU_SCRIPT_AQUI.js"></script>
 </body>
 </html>
